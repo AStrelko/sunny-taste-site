@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Task_3</title>
+</head>
+<body>
+    <nav>
+    <div class="logo">Кафе "Сонячний смак"</div>
+    
+    <div class="hamburger" id="hamburger">
+        ☰
+    </div>
+
+    <div class="nav-links" id="nav-links">
+        <a href="#">Головна</a>
+        <a href="#">Меню</a>
+        <a href="#">Контакти</a>
+    </div>
+</nav>
+    <div class="container">
+        <img src="./imege/banner.jpg" alt="photo">
+        <div class="box">
+            <p>Ласкаво просимо до</p>
+            <p>кафе "Сонячний смак"</p>
+        </div>
+    </div>
+    <main>
+        <section>
+            <img src="./imege/about.jpg" alt="photo">
+        </section>
+        <section>
+             
+             <p>Відкрийте для себе кафе "Сонячний смак - оазу затишку у самому центрі міста. Ми пропонуємо широкий вибір страв: від ситних сніданків до легких перекусів і вишуканих десертів."</p>
+             <p>Наші відвідувачі люблять це місце за теплий прийом, відмінне обслуговування та особливий смак кожної страви.</p>
+             <p>Приходьте до нас, щоб відчути домашній затишок і насолодитися унікальними кулінарними шедеврами.</p>
+             <p>Наша команда майстрів кулінарії ретельно підбирає інгрідієнти, щоб кожна страва була бездоганною. Незалежно від того, чи це швидкий обід, чи святкова вечеря - ми подбаємо про ваш комфорт.</p>
+        </section>
+    </main>
+    <div class="menu">
+        <h4>Наше меню</h4>
+        <div class="box1">
+            <img src="./imege/burher.png" alt="">
+            <h3>Бургер</h3>
+            <p>Ціна: 150 грн</p>
+            <button>Замовити зараз</button>
+        </div>
+        <div class="box1">
+            <img src="./imege/pica.jpg" alt="">
+            <h3>Піца</h3>
+            <p>Ціна: 200 грн</p>
+            <button>Замовити зараз</button>
+        </div>
+        <div class="box1">
+            <img src="./imege/salat.jpg" alt="">
+            <h3>Салат</h3>
+            <p>Ціна: 100 грн</p>
+            <button>Замовити зараз</button>
+        </div>
+    </div>
+    <footer><p>Телефон: +38(067) 123-45-67|Адреса: вул. Центральна, 12 м.Тернопіль</p><p>&copy;2024 Кафе "Сонячний смак"</p></footer>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
